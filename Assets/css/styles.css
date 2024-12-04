@@ -6,6 +6,8 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Arial';
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
@@ -37,20 +39,14 @@ header {
     animation: slideRight 1s ease forwards;
 }
 
-.navbar-links {
-    display: flex;
-    list-style: none;
-}
 
 .navbar-links ul {
     display: flex;
-    list-style: none;
     gap: 15px;
 }
 
 .navbar-links a {
     display: inline-block;
-    text-decoration: none;
     color: #fff;
     font-weight: 500;
     font-size: 1.2rem;
@@ -64,19 +60,6 @@ header {
 .navbar-links a:hover,
 .navbar a .tab-active {
     color: #C9BC31;
-}
-
-.dropdown {
-    display: none;
-}
-
-.dropdown ul,
-a {
-    flex-direction: column;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    list-style: none;
 }
 
 .menu-btn {
@@ -136,6 +119,7 @@ a {
     top: 5vh;
     left: 5vh;
     margin-right: 5vh;
+    color: #fff;
     animation: slideTop 5s ease forwards;
 }
 
@@ -304,14 +288,6 @@ a {
     gap: 2rem;
     background-color: #e1e0e0;
 }
-
-.About-div {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100vh;
-}
-
 .About-page h2 {
     display: flex;
     justify-content: center;
@@ -433,6 +409,12 @@ a {
     padding-top: 5vh;
     left: 17vh;
     position: relative;
+}
+
+.language-container a {
+    text-align: center;
+    position: relative;
+    left: 16.5vh;
 }
 
 .language-container .icon1,
@@ -624,4 +606,8 @@ a {
 
 footer {
     color: #000;
+}
+
+.footer-details {
+    display: none;
 }

@@ -1,11 +1,22 @@
 const menuBTN = document.getElementById('mobile-menu');
-const navbarLinks = document.getElementById('navbar-links');
+const menubtn = document.querySelector(".menu-btn");
+const navmenu = document.querySelector(".nav-menu");
+
+menuBTN.addEventListener("click", () => {
+    menuBTN.classList.toggle("active");
+    navmenu.classList.toggle("active");
+});
+
+
+
+
+/*const navbarLinks = document.getElementById('navbar-links');
 const dropdownMenu = document.getElementById('dropdown-menu');
 
 menuBTN.addEventListener('click', () => {
     navbarLinks.classList.toggle('active');
     dropdownMenu.classList.toggle('active');
-});
+});*/
 
 const swiper = new Swiper('.slider-wrapper', {
     loop: true,
@@ -40,7 +51,7 @@ const swiper = new Swiper('.slider-wrapper', {
 const swiper1 = new Swiper('.slide_wrapper', {
     loop: true,
     grabCursor: true,
-    spaceBetween: 30,   
+    spaceBetween: 10,   
 
     navigation: {
         nextEl: '.swiper-button-next',

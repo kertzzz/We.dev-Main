@@ -300,6 +300,12 @@
 
 /*Mobile Screen-size*/
 @media (max-width: 768px) {
+
+    /*Home Page*/
+    .img-container {
+        display: none;
+    }
+
     .home-div h2 {
         font-size: 25px;
         position: relative;
@@ -315,41 +321,322 @@
 
     .navbar-links.active,
     .navbar-links {
-        display: none;
-    }
-
-    .dropdown {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        background-color: #222;
-        top: 69px;
-        right: 15px;
-        width: 25vh;
-        z-index: 100;
-    }
-
-    .dropdown ul {
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-    }
-
-    .dropdown ul li {
-        margin: 15px 1px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .dropdown.active {
-        display: flex;
+        display: block;
     }
 
     .menu-btn {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: 100%;
+        top: 65px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #181920;
+        width: 32%;
+        text-align: center;
+        transition: .3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+        padding-left: 6vh;
+    }
+
+    .nav-menu.active {
+        left: 54vh;
+    }
+
+    /*Reviews page*/
+    .Reviews-page {
+        height: 160vh;
+    }
+
+    .Reviews-div {
         display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        background-color: #c9c9c9;
+    }
+
+    .left-rdiv {
+        width: 100%;
+    }
+
+    .left-rdiv .circle-icon {
+        padding-left: 5vh;
+        padding-bottom: 3vh;
+        height: auto;
+        width: 20vh;
+    }
+
+    .fd h2 {
+        top: -18vh;
+        left: 23vh;
+    }
+
+    .fd p {
+        top: -15vh;
+        right: 5vh;
+    }
+
+    .right-rdiv {
+        width: 100%;
+    }
+
+    .container-swiper {
+        top: 2vh;
+    }
+
+    /*About page*/
+    .About-page {
+        padding-top: 65px;
+        height: 187vh;
+    }
+
+    .About-page h2 {
+        position: relative;
+        top: -10vh;
+    }
+
+    .Profile-Team {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4vh;
+        width: 100%;
+        height: 50vh;
+        padding-left: 14vh;
+    }
+
+    .Profile-Team .CEO-container,
+    .Programmers-container,
+    .Designers-container {
+        position: relative;
+        top: 45vh;
+        height: 50vh;
+        padding-top: 25vh;
+    }
+
+    .Profile-Team .icon1 {
+        width: 100px;
+        height: auto;
+        left: 19.5vh;
+        top: -25vh;
+        position: relative;
+    }
+
+    .Profile-Team .icon2 {
+        width: 100px;
+        height: auto;
+        left: 19.5vh;
+        top: -25vh;
+        position: relative;
+    }
+
+    .Profile-Team .icon3 {
+        width: 100px;
+        height: auto;
+        left: 19.5vh;
+        top: -25vh;
+        position: relative;
+    }
+
+    .Profile-Team p {
+        top: -15vh;
+        position: relative;
+    }
+
+    /*Profile About page*/
+    .container {
+        top: 20vh;
+    }
+
+    #profile-kert,
+    #profile-mikel,
+    #profile-bacani,
+    #profile-faith,
+    #profile-nashley,
+    #profile-gadiel,
+    #profile-gaufo,
+    #profile-corcelles,
+    #profile-precious,
+    #profile-mendez,
+    #profile-kerby,
+    #profile-ellah,
+    #profile-diez {
+        left: 2vh;
+    }
+
+    #profile-kert .profile-name {
+        left: -10vh;
+    }
+
+    #profile-faith .profile-name {
+        left: -7vh;
+    }
+
+    #profile-faith ul {
+        left: 8vh;
+    }
+
+    #profile-faith .Skills {
+        left: 6vh;
+    }
+
+    #profile-faith .ed-at {
+        left: 6vh;
+    }
+
+    #profile-mikel .profile-name {
+        left: -1vh;
+    }
+
+    #profile-gadiel .profile-name {
+        left: -7vh;
+    }
+
+    #profile-gaufo .profile-name {
+        left: -13vh;
+    }
+
+    #profile-corcelles .profile-name {
+        left: -5vh;
+    }
+
+    #profile-nashley .profile-name {
+        left: -7vh;
+    }
+
+    #profile-precious .profile-name {
+        left: -3vh;
+        font-size: 32px;
+    }
+
+    #profile-precious ul {
+        left: 8vh;
+    }
+
+    #profile-precious .Skills {
+        left: 6vh;
+    }
+
+    #profile-precious .ed-at {
+        left: 6vh;
+    }
+
+    #profile-bacani .profile-name {
+        left: -6vh;
+        top: -28vh;
+    }
+
+    #profile-mendez .profile-name {
+        left: -7vh;
+    }
+
+    #profile-ellah .profile-name {
+        left: -7vh;
+    }
+
+    #profile-diez .profile-name {
+        left: -11vh;
+    }
+
+    #profile-kerby .profile-name {
+        left: -5vh;
+    }
+
+    /*Services page*/
+    .Service-page {
+        padding-top: 65px;
+        height: 187vh;
+    }
+
+    .Service-page h2 {
+        position: relative;
+        top: -10vh;
+    }
+
+    .language-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4vh;
+        width: 100%;
+        height: 40vh;
+        padding-left: 14vh;
+    }
+
+    .language-container .WebDev-container,
+    .Java-container,
+    .AndroidApp-container {
+        position: relative;
+        top: 55vh;
+        height: 80vh;
+        padding-top: 25vh;
+    }
+
+    .language-container .icon1 {
+        width: 100px;
+        height: auto;
+        left: 19.5vh;
+        top: -20vh;
+        position: relative;
+    }
+
+    .language-container .icon2 {
+        width: 100px;
+        height: auto;
+        left: 19.5vh;
+        top: -20vh;
+        position: relative;
+    }
+
+    .language-container .icon3 {
+        width: 100px;
+        height: auto;
+        left: 19.5vh;
+        top: -20vh;
+        position: relative;
+    }
+
+    .language-container h5 {
+        top: -15vh;
+        position: relative;
+    }
+
+    .language-container .See_more {
+        top: -7vh;
+        position: relative;
     }
 
     .slider-wrapper {
         margin: 0 130px 55px;
+    }
+
+    /*Contact Page*/
+    .left-container,
+    .text-details {
+        display: none;
+    }
+
+    .contact-container {
+        margin-top: 10vh;
+    }
+
+    .contact-container,
+    .right-container {
+        width: 70vh;
+        height: 70vh;
+    }
+
+    .footer-details {
+        display: grid;
+        background-color: #181920;
+        width: auto;
+        color: #fff;
+        padding: 10px;
     }
 }
