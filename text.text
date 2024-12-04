@@ -1,0 +1,386 @@
+<div class="floatbox" id="float-box">
+                    <button class="close-btn" id="close-btn">X</button>
+                    <div class="profile-img">
+                        <img src="Assets/img/profile.webp" alt="Image">
+                    </div>
+                    <p class="profile-name">John Kert Ouano</p>
+                    <p class="profile-role">Head Programmer</p>
+                    <p class="profile-motto">Forgiveness is a gift to myself. By letting go my <br>past mistakes.</p>
+                    <ul>
+                        <li><b>Age: </b> 18 years old</li>
+                        <li><b>Birthdate: </b> December 25, 2005</li>
+                        <li><b>Place of Birth: </b> Quezon City</li>
+                        <li><b>Gender: </b> Male</li>
+                    </ul>
+                </div>
+
+const floatbox = document.getElementById('float-box');
+const DetailsBTN = document.getElementById('Details');
+const closeBTN = document.getElementById('close-btn');
+
+DetailsBTN.addEventListener('click', () => {
+    floatbox.classList.toggle('active');
+});
+
+closeBTN.addEventListener('click', () => {
+    floatbox.classList.remove('active');
+});
+
+
+
+
+
+
+                .card-container {
+    overflow-x: scroll;
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card-list,
+.card-item {
+    width: 600px;
+    height: 65vh;
+    color: #222;
+    padding-left: 100px;
+    padding-right: 100px;
+    animation: swingTop .8s linear forwards;
+}
+
+.card-image {
+    position: relative;
+    border-radius: 50%;
+    border: 2px solid #444444;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: auto;
+    width: 250px;
+}
+
+.card-list,
+h4 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-list {
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: auto auto auto;
+    grid-gap: 205px;
+    flex: none;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: #fff;
+    padding: 55px;
+    border-radius: 8px;
+}
+
+.card-list .card-item .Role {
+    font-size: 1.5rem;
+    color: #bb9107;
+    font-weight: 500;
+    margin: 14px 0 40px;
+    text-align: center;
+}
+
+.card-list .card-item .more-details {
+    font-size: 1.25rem;
+    padding: 10px 35px;
+    color: #030728;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: .2s ease;
+}
+
+.card-list .card-item .more-details:hover {
+    background: #686868;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: .2s ease;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+    color: #00ffe5;
+}
+
+
+
+top: -75vh;
+    left: 40vh;
+    width: 125vh;
+    height: 75vh;
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container swiper">
+        <div class="slider-wrapper">
+            <div class="card-list swiper-wrapper">
+                <div class="card-item swiper-slide">
+                    <img src="Assets/img/ProjectLeader.jpg" alt="Card Image" class="card-image">
+                    <h4 class="name">Faith Bermudez</h4>
+                    <p class="role">Project Leader</p>
+                    <a class="more-details" data-profile="faith">More Details</a>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <img src="Assets/img/HeadProgrammer.jpg" alt="Card Image" class="card-image">
+                    <h4 class="name">John Kert Ouano</h4>
+                    <p class="role">Head Programmer</p>
+                    <a class="more-details" data-profile="kert">More Details</a>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <img src="Assets/img/JuniorWebDev.jpg" alt="Card Image" class="card-image">
+                    <h4 class="name">Nashley Manabat</h4>
+                    <p class="role">Junior Web Developer</p>
+                    <a class="more-details" data-profile="nashley">More Details</a>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <img src="Assets/img/SystemDeveloper.jpg" alt="Card Image" class="card-image">
+                    <h4 class="name">Kerby Alimpuangon</h4>
+                    <p class="role">System Developer</p>
+                    <a class="more-details" data-profile="kerby">More Details</a>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <img src="Assets/img/SystemAnalyst.jpg" alt="Card Image" class="card-image">
+                    <h4 class="name">Mikel Agustin</h4>
+                    <p class="role">System Analyst</p>
+                    <a class="more-details" data-profile="mikel">More Details</a>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <img src="Assets/img/ContentProducer.jpg" alt="Card Image" class="card-image">
+                    <h4 class="name">Ellah Mindajao</h4>
+                    <p class="role">Content Producer</p>
+                    <a class="more-details" data-profile="ellah">More Details</a>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <img src="Assets/img/Designer1.jpg" alt="Card Image" class="card-image">
+                    <h4 class="name">Danielle Bacani</h4>
+                    <p class="role">Designer</p>
+                    <a class="more-details" data-profile="bacani">More Details</a>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <img src="Assets/img/Designer2.png" alt="Card Image" class="card-image">
+                    <h4 class="name">Precious Arnaldo</h4>
+                    <p class="role">Designer</p>
+                    <a class="more-details" data-profile="precious">More Details</a>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <img src="Assets/img/Researcher1.png" alt="Card Image" class="card-image">
+                    <h4 class="name">Gadiel Pasigan</h4>
+                    <p class="role">Researcher</p>
+                    <a class="more-details" data-profile="gadiel">More Details</a>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <img src="Assets/img/Researcher2.jpg" alt="Card Image" class="card-image">
+                    <h4 class="name">Marilyn Mendez</h4>
+                    <p class="role">Researcher</p>
+                    <a class="more-details" data-profile="mendez">More Details</a>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <img src="Assets/img/Staffmanager.jpg" alt="Card Image" class="card-image">
+                    <h4 class="name">Joshua Corcelles</h4>
+                    <p class="role">Staff Manager</p>
+                    <a class="more-details" data-profile="corcelles">More Details</a>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <img src="Assets/img/Staff1.jpg" alt="Card Image" class="card-image">
+                    <h4 class="name">Euro Gaufo</h4>
+                    <p class="role">Staff</p>
+                    <a class="more-details" data-profile="gaufo">More Details</a>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <img src="Assets/img/Staff2.jpg" alt="Card Image" class="card-image">
+                    <h4 class="name">Kim Diez</h4>
+                    <p class="role">Staff</p>
+                    <a class="more-details" data-profile="diez">More Details</a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="slide-button swiper-button-prev"></div>
+            <div class="slide-button swiper-button-next"></div>
+        </div>
+
+        <div class="floatbox" id="profile-faith">
+            <button class="close-btn" id="close-btn">X</button>
+            <div class="profile-img">
+                <img src="Assets/img/ProjectLeader.jpg" alt="Image">
+            </div>
+            <p class="profile-name">Faith M. Bermudez</p>
+            <p class="profile-role">Project Leader</p>
+            <p class="profile-motto">Fight with purpose, not just to win, but to <br> make difference.</p>
+        </div>
+
+        <div class="floatbox" id="profile-kert">
+            <button class="close-btn" id="close-btn">X</button>
+            <div class="profile-img">
+                <img src="Assets/img/HeadProgrammer.jpg" alt="Image">
+            </div>
+            <p class="profile-name">John Kert Ouano</p>
+            <p class="profile-role">Head Programmer</p>
+            <p class="profile-motto">Forgiveness is a gift to myself, by<br> letting go of my past mistakes</p>
+        </div>
+
+        <div class="floatbox" id="profile-nashley">
+            <button class="close-btn" id="close-btn">X</button>
+            <div class="profile-img">
+                <img src="Assets/img/JuniorWebDev.jpg" alt="Image">
+            </div>
+            <p class="profile-name">Nashley Manabat</p>
+            <p class="profile-role">Junior Web Developer</p>
+            <p class="profile-motto">Past will remain history, Present will never be<br> easy, but the Future
+                will be all soon worthy</p>
+        </div>
+
+        <div class="floatbox" id="profile-kerby">
+            <button class="close-btn" id="close-btn">X</button>
+            <div class="profile-img">
+                <img src="Assets/img/SystemDeveloper.jpg" alt="Image">
+            </div>
+            <p class="profile-name">Kerby Alimpuangon</p>
+            <p class="profile-role">System Developer</p>
+            <p class="profile-motto">Failure doesn't mean you lost, it means you have<br> room to improve, Use
+                that chance to be better.</p>
+        </div>
+
+        <div class="floatbox" id="profile-mikel">
+            <button class="close-btn" id="close-btn">X</button>
+            <div class="profile-img">
+                <img src="Assets/img/SystemAnalyst.jpg" alt="Image">
+            </div>
+            <p class="profile-name">Mikel Agustin</p>
+            <p class="profile-role">System Analyst</p>
+            <p class="profile-motto">Hardwork beats talent.</p>
+        </div>
+
+        <div class="floatbox" id="profile-ellah">
+            <button class="close-btn" id="close-btn">X</button>
+            <div class="profile-img">
+                <img src="Assets/img/ContentProducer.jpg" alt="Image">
+            </div>
+            <p class="profile-name">Ellah Mindajao</p>
+            <p class="profile-role">Content Producer</p>
+            <p class="profile-motto">Hardwork beats talent.</p>
+        </div>
+
+        <div class="floatbox" id="profile-bacani">
+            <button class="close-btn" id="close-btn">X</button>
+            <div class="profile-img">
+                <img src="Assets/img/Designer1.jpg" alt="Image">
+            </div>
+            <p class="profile-name">Danielle Bacani</p>
+            <p class="profile-role">Designer</p>
+            <p class="profile-motto">Nothing is permanent.</p>
+        </div>
+
+        <div class="floatbox" id="profile-precious">
+            <button class="close-btn" id="close-btn">X</button>
+            <div class="profile-img">
+                <img src="Assets/img/Designer2.png" alt="Image">
+            </div>
+            <p class="profile-name">Precious Gracee Arnaldo</p>
+            <p class="profile-role">Designer</p>
+            <p class="profile-motto">Never be afraid of failures and mistakes,<br> be afraid of the regret that
+                comes <br>after not even trying.</p>
+        </div>
+
+        <div class="floatbox" id="profile-gadiel">
+            <button class="close-btn" id="close-btn">X</button>
+            <div class="profile-img">
+                <img src="Assets/img/Researcher1.png" alt="Image">
+            </div>
+            <p class="profile-name">Gadiel Pasigan</p>
+            <p class="profile-role">Researcher</p>
+            <p class="profile-motto">If there's tomorrow, then there is hope</p>
+        </div>
+
+        <div class="floatbox" id="profile-mendez">
+            <button class="close-btn" id="close-btn">X</button>
+            <div class="profile-img">
+                <img src="Assets/img/Researcher2.jpg" alt="Image">
+            </div>
+            <p class="profile-name">Marilyn Mendez</p>
+            <p class="profile-role">Researcher</p>
+            <p class="profile-motto">Be brave enough to face your fears,<br> because that's how you find your
+                strength</p>
+        </div>
+
+        <div class="floatbox" id="profile-corcelles">
+            <button class="close-btn" id="close-btn">X</button>
+            <div class="profile-img">
+                <img src="Assets/img/Staffmanager.jpg" alt="Image">
+            </div>
+            <p class="profile-name">Joshua Corcelles</p>
+            <p class="profile-role">Staff Manager</p>
+            <p class="profile-motto">Keep your eyes on the prize.</p>
+        </div>
+
+        <div class="floatbox" id="profile-gaufo">
+            <button class="close-btn" id="close-btn">X</button>
+            <div class="profile-img">
+                <img src="Assets/img/Staff1.jpg" alt="Image">
+            </div>
+            <p class="profile-name">Euro Gaufo</p>
+            <p class="profile-role">Staff</p>
+            <p class="profile-motto">We live everyday, we only die once so<br> live your life to its fullest.</p>
+        </div>
+
+        <div class="floatbox" id="profile-diez">
+            <button class="close-btn" id="close-btn">X</button>
+            <div class="profile-img">
+                <img src="Assets/img/Staff2.jpg" alt="Image">
+            </div>
+            <p class="profile-name">Kim Caila Diez</p>
+            <p class="profile-role">Staff</p>
+            <p class="profile-motto">You define your own life. <br> Don't let other people write your script.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+document.getElementById("More_Web").onclick = function () {
+    location.href = "WebDevelopment.html";
+};
+
+document.getElementById("More_Java").onclick = function () {
+    location.href = "JavaDevelopment.html";
+};
+
+document.getElementById("More_MobileApp").onclick = function () {
+    location.href = "MobileAppDevelopment.html";
+};

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmers</title>
+    <link rel="icon" href="Assets/img/icon.png">
+    <link rel="stylesheet" href="Assets/css/styles.css">
+    <link rel="stylesheet" href="Assets/css/stylesheet.css">
+    <link rel="stylesheet" href="Assets/css/animation.css">
+    <link rel="stylesheet" href="Assets/css/floatbox.css">
+    <link rel="stylesheet" href="Assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/7b1ce9f98a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="Assets/img/logo.png" alt="Logo">
+        </div>
+        <nav class="navbar-links" id="navbar-links">
+            <ul>
+                <li><a href="index.html" style="--i:1;">Home</a></li>
+                <li><a href="index.html#About-page" style="--i:2;">About</a></li>
+                <li><a href="index.html#Service-page" style="--i:3;">Services</a></li>
+                <li><a href="index.html#Contact-page" style="--i:4;">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="menu-btn" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="dropdown" id="dropdown-menu">
+            <ul>
+                <li><a href="index.html" class="tab-active">Home</a></li>
+                <li><a href="index.html#About-page">About</a></li>
+                <li><a href="index.html#Service-page">Services</a></li>
+                <li><a href="index.html#Contact-page">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container">
+        <div class="title">
+            <h1>Programmers</h1>
+        </div>
+
+        <div class="container swiper">
+            <div class="slider-wrapper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                        <img src="Assets/img/Ouano.jpg" alt="Card Image" class="card-image">
+                        <h4 class="name">John Kert Ouano</h4>
+                        <p class="profile-role">Head Programmer</p>
+                        <a class="more-details" data-profile="kert">More Details</a>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="Assets/img/JuniorWebDev.jpg" alt="Card Image" class="card-image">
+                        <h4 class="name">Nashley Manabat</h4>
+                        <p class="profile-role">Junior Web Developer</p>
+                        <a class="more-details" data-profile="nashley">More Details</a>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="Assets/img/Pasigan.png" alt="Card Image" class="card-image">
+                        <h4 class="name">Gadiel Pasigan</h4>
+                        <p class="profile-role">System Analyst</p>
+                        <a class="more-details" data-profile="gadiel">More Details</a>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="Assets/img/Staff1.jpg" alt="Card Image" class="card-image">
+                        <h4 class="name">Euro Gaufo</h4>
+                        <p class="profile-role">System Developer</p>
+                        <a class="more-details" data-profile="gaufo">More Details</a>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="Assets/img/Corcelles.png" alt="Card Image" class="card-image">
+                        <h4 class="name">Joshua Corcelles</h4>
+                        <p class="profile-role">Programmer</p>
+                        <a class="more-details" data-profile="corcelles">More Details</a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="slide-button swiper-button-prev"></div>
+                <div class="slide-button swiper-button-next"></div>
+            </div>
+        </div>
+
+        <div class="floatbox" id="profile-kert">
+            <button class="close-btn" id="close-btn">X</button>
+            <div class="profile-img">
+                <img src="Assets/img/Ouano.jpg" alt="Image">
+            </div>
+            <p class="profile-name">John Kert Ouano</p>
+            <p class="profile-motto">Forgiveness is a gift to myself, by<br> letting go of my past mistakes</p>
+
+            <p class="ed-at">Educational Attainment :</p>
+            <ul>
+                <li><b class="colorf">College: </b> Quezon City University</li>
+                <li><b class="colorf">Senior-High School: </b> STI College Fairview</li>
+                <li><b class="colorf">High School: </b> West Fairview High School</li>
+            </ul>
+            <br>
+            <p class="Skills">Skills : </p>
+            <ul>
+                <li>Head Programmer</li>
+                <li>Web Master</li>
+            </ul>
+        </div>
+
+        <div class="floatbox" id="profile-nashley">
+            <button class="close-btn" id="close-btn">X</button>
+            <div class="profile-img">
+                <img src="Assets/img/JuniorWebDev.jpg" alt="Image">
+            </div>
+            <p class="profile-name">Nashley Manabat</p>
+            <p class="profile-motto">Past will remain history, Present will<br> never be easy, but the Future
+                will be all<br> soon worthy</p>
+
+            <p class="ed-at">Educational Attainment :</p>
+            <ul>
+                <li><b class="colorf">College: </b> Quezon City University</li>
+                <li><b class="colorf">Senior-High School: </b> Eclaro Academy</li>
+                <li><b class="colorf">High School: </b> Judge Feliciano Belmonte Sr. High School</li>
+            </ul>
+            <br>
+            <p class="Skills">Skills : </p>
+            <ul>
+                <li>Fast Learner</li>
+                <li>Software Engineer</li>
+            </ul>
+        </div>
+
+        <div class="floatbox" id="profile-gadiel">
+            <button class="close-btn" id="close-btn">X</button>
+            <div class="profile-img">
+                <img src="Assets/img/Pasigan.png" alt="Image">
+            </div>
+            <p class="profile-name">Gadiel A. Pasigan</p>
+            <p class="profile-motto">If there's tomorrow, then<br> there is hope</p>
+
+            <p class="ed-at">Educational Attainment :</p>
+            <ul>
+                <li><b class="colorf">College: </b> Quezon City University</li>
+                <li><b class="colorf">Senior-High School: </b> Culilat High School</li>
+                <li><b class="colorf">High School: </b> Culilat High School</li>
+            </ul>
+            <br>
+            <p class="Skills">Skills : </p>
+            <ul>
+                <li>Web Developer</li>
+                <li>Java Developer</li>
+            </ul>
+        </div>
+
+        <div class="floatbox" id="profile-gaufo">
+            <button class="close-btn" id="close-btn">X</button>
+            <div class="profile-img">
+                <img src="Assets/img/Staff1.jpg" alt="Image">
+            </div>
+            <p class="profile-name">Euro P. Gaufo</p>
+            <p class="profile-motto">We live everyday, we only die once<br> so live your life to its fullest.</p>
+            
+            <p class="ed-at">Educational Attainment :</p>
+            <ul>
+                <li><b class="colorf">College: </b> Quezon City University</li>
+                <li><b class="colorf">Senior-High School: </b> Batasan Hills National High School</li>
+                <li><b class="colorf">High School: </b> Batasan Hills National High School</li>
+            </ul>
+            <br>
+            <p class="Skills">Skills : </p>
+            <ul>
+                <li>Web Security Analyst</li>
+                <li>Multi-tasking</li>
+            </ul>
+        </div>
+
+        <div class="floatbox" id="profile-corcelles">
+            <button class="close-btn" id="close-btn">X</button>
+            <div class="profile-img">
+                <img src="Assets/img/Corcelles.png" alt="Image">
+            </div>
+            <p class="profile-name">Joshua D. Corcelles</p>
+            <p class="profile-motto">Keep your eyes on the prize.</p>
+
+            <p class="ed-at">Educational Attainment :</p>
+            <ul>
+                <li><b class="colorf">College: </b> Quezon City University</li>
+                <li><b class="colorf">Senior-High School: </b> Agusan National High School</li>
+                <li><b class="colorf">High School: </b> Cabalawan Integrated School</li>
+            </ul>
+            <br>
+            <p class="Skills">Skills : </p>
+            <ul>
+                <li>Front-end Developer</li>
+                <li>Back-end Developer</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

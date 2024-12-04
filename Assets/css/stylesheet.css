@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Arial';
+}
+
+body {
+    background-color: #e1e0e0;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.main {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    gap: 2rem;
+    padding: 5% 8%;
+    background-color: #3f3d3d;
+}
+
+.main h1 {
+    text-align: center;
+    font-size: 45px;
+}
+
+.main .img-container {
+    display: flex;
+    position: relative;
+    top: -55vh;
+    left: 47vh;
+}
+
+.main .img-container img {
+    width: 450px;
+    height: 450px;
+    position: relative;
+    top: 46vh;
+    right: 35vh;
+    border-radius: 50%;
+    justify-content: space-between;
+    padding: 120px;
+}
+
+.main .img-container span {
+    font-size: 20px;
+    position: relative;
+    top: 37vh;
+    right: 16vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*About Us*/
+.title h1 {
+    color: #000;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 13vh;
+    font-size: 50px;
+}
+
+.container {
+    position: relative;
+    top: 25vh;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    max-width: 100%;
+    height: 50vh;
+    margin: 0 120px 55px;
+}
+
+.card-list .card-item {
+    color: #000;
+    background-color: #776f6f4b;
+    user-select: none;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+.card-list .card-item .card-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    padding: 4px;
+    object-fit: cover;
+}
+
+.card-list .card-item .name {
+    font-size: 30px;
+    color: #000000;
+    line-height: 5px;
+}
+
+.card-list .card-item .profile-role {
+    font-size: 26px;
+    font-weight: 500;
+    position: relative;
+    float: right;
+    color: #948b25;
+    top: 15px;
+    text-align: center;
+}
+
+.card-list .card-item .more-details {
+    font-size: 22px;
+    margin-top: 10vh;
+    padding: 30px 35px;
+    color: #000000;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.card-list .card-item .more-details:hover {
+    color: #fff;
+}
+
+.slider-wrapper .swiper-pagination-bullet {
+    background-color: #3f3d3d;
+    height: 13px;
+    width: 13px;
+}
+
+.slider-wrapper .slide-button {
+    color: #333333;
+    margin: -30px 70px 35px;
+    transition: .2s ease;
+}
+
+.slider-wrapper .slide-button:hover {
+    color: #fff;
+}
+
+.floatbox {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    background: #020202a8;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    overflow: hidden;
+    animation: active .2s ease-in-out forwards;
+}
+
+.floatbox img {
+    padding: 10px;
+    border-radius: 50%;
+    height: 50vh;
+    width: 40vh;
+    object-fit: cover;
+}
+
+.profile-img {
+    width: 33%;
+    position: relative;
+    top: 10vh;
+    left: 35px;
+    object-fit: cover;
+}
+
+.floatbox.active {
+    display: block;
+}
+
+.floatbox .profile-name {
+    font-size: 34px;
+    position: relative;
+    float: right;
+    color: #C9BC31;
+}
+
+.floatbox .profile-motto {
+    font-size: 23px;
+    position: relative;
+}
+
+.floatbox .ed-at,
+.Skills {
+    font-size: 20px;
+    position: relative;
+    top: -1vh;
+    left: 8vh;
+}
+
+.floatbox .colorf {
+    color: #C9BC31;
+}
+
+.floatbox ul {
+    font-size: 18px;
+    position: relative;
+    top: -1vh;
+    left: 10vh;
+    line-height: 5vh;
+    list-style: none;
+}
+
+.close-btn {
+    font-size: 38px;
+    position: relative;
+    float: right;
+    width: 50px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    transition: .2s ease;
+    color: #fff;
+}
+
+.close-btn:hover {
+    color: #fff;
+    background-color: #3f414149;
+}

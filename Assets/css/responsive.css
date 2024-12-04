@@ -1,0 +1,355 @@
+/*My Main Desktop Screen-size*/
+@media (max-width: 1920px) {}
+
+/*Laptop Screen-size*/
+@media (max-width: 1423px) {
+    .home-div h2 {
+        font-size: 45px;
+        width: 44%;
+        position: relative;
+        right: 5vh;
+    }
+
+    .home-div h3 {
+        font-size: 23px;
+        position: relative;
+        right: 10vh;
+    }
+
+    .navbtn a {
+        position: relative;
+        left: -5vh;
+    }
+
+    .left-rdiv .circle-icon {
+        height: auto;
+        width: 29vh;
+    }
+
+    .left-rdiv h3 {
+        font-size: 44px;
+    }
+
+    .left-rdiv h2 {
+        font-size: 24px;
+    }
+
+    .fd h2 {
+        position: relative;
+        top: -23vh;
+        left: 30vh;
+    }
+
+    .fd p {
+        position: relative;
+        top: -20vh;
+        right: 10vh;
+    }
+
+    .container-swiper {
+        position: relative;
+        top: 25vh;
+    }
+
+    .img-container {
+        left: 91.5vh;
+        width: 71.5%;
+    }
+
+    .container {
+        top: 0vh;
+    }
+
+    .Profile-Team img {
+        left: 13vh;
+    }
+
+    .Designers-container p {
+        position: relative;
+        top: 10vh;
+    }
+
+    .CEO-container p {
+        position: relative;
+        top: 12vh;
+    }
+
+    .Programmers-container p {
+        position: relative;
+        top: 15vh;
+    }
+
+    .About-page h2 {
+        padding-bottom: 30px;
+    }
+
+    .language-container img {
+        left: 16vh;
+        width: 120px;
+    }
+
+    .WebDev-container .See_more {
+        position: relative;
+        top: 20vh;
+    }
+
+    .WebDev-container h5 {
+        position: relative;
+        top: 15vh;
+    }
+
+    .Java-container .See_more {
+        position: relative;
+        top: 19vh;
+    }
+
+    .Java-container h5 {
+        position: relative;
+        top: 13vh;
+    }
+
+    .AndroidApp-container .See_more {
+        position: relative;
+        top: 6vh;
+    }
+
+    .AndroidApp-container h5 {
+        position: relative;
+        top: 4vh;
+    }
+
+    .container {
+        top: 15vh;
+    }
+
+    .card-list .card-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slider-wrapper .slide-button {
+        margin: -50px 70px 35px;
+    }
+
+    .slider-wrapper {
+        height: auto;
+    }
+
+    .floatbox {
+        position: absolute;
+        left: 100vh;
+    }
+
+    .floatbox .profile-img {
+        top: 8vh;
+        left: 20px;
+    }
+
+    .floatbox .profile-name {
+        left: -18vh;
+        font-size: 34px;
+    }
+
+    .floatbox .profile-motto {
+        font-size: 20px;
+        right: 18vh;
+    }
+
+    .floatbox ul {
+        font-size: 20px;
+        right: 20vh;
+    }
+
+    .close-btn {
+        width: 40px;
+        height: auto;
+        font-size: 30px;
+    }
+
+    .Portfolio-page h2 {
+        font-size: 50px;
+    }
+
+    .language-container .WebDev-container,
+    .Java-container,
+    .AndroidApp-container {
+        margin-top: 10px;
+        width: 50vh;
+    }
+
+    .ContactBTN {
+        width: 21vh;
+    }
+
+    .right-container h3 {
+        font-size: 35px;
+        padding: 20px;
+    }
+
+    .right-container .input-box {
+        margin-top: 45px;
+    }
+
+    .text-details {
+        margin: 60px 0;
+        padding: 10px;
+    }
+
+    .text-details p {
+        font-size: 17px;
+        padding: 30px;
+    }
+}
+
+/*Tablet Screen-Size*/
+@media (max-width: 990px) {
+    .home-div h2 {
+        font-size: 30px;
+        position: relative;
+        left: -8vh;
+    }
+
+    .home-div h3 {
+        font-size: 18px;
+        position: relative;
+        left: -8vh;
+    }
+
+    .navbar-links.active,
+    .navbar-links {
+        display: none;
+    }
+
+    .dropdown {
+        display: flex;
+        position: sticky;
+        flex-direction: column;
+        position: absolute;
+        background-color: #222;
+        top: 69px;
+        right: 15px;
+        width: 25vh;
+        z-index: 1;
+    }
+
+    .dropdown ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .dropdown ul li {
+        margin: 15px 1px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .slider-wrapper .slide-button {
+        margin-top: -50px;
+    }
+
+    .card-list .card-item .name {
+        font-size: 24px;
+    }
+
+    .card-list .card-item .role {
+        font-size: 20px;
+    }
+
+    .floatbox {
+        left: 18vh;
+    }
+
+    .floatbox .profile-name {
+        right: 25vh;
+        font-size: 38px;
+    }
+
+    .floatbox .profile-role {
+        font-size: 30px;
+        right: -8vh;
+    }
+
+    .floatbox .profile-motto {
+        font-size: 20px;
+        right: -35vh;
+    }
+
+    .floatbox ul {
+        font-size: 20px;
+        right: 29vh;
+    }
+
+    .close-btn {
+        width: 40px;
+        height: auto;
+        font-size: 30px;
+    }
+
+
+}
+
+
+/*Mobile Screen-size*/
+@media (max-width: 768px) {
+    .home-div h2 {
+        font-size: 25px;
+        position: relative;
+        left: -8vh;
+        width: 46%;
+    }
+
+    .home-div h3 {
+        font-size: 16.5px;
+        position: relative;
+        left: -8vh;
+    }
+
+    .navbar-links.active,
+    .navbar-links {
+        display: none;
+    }
+
+    .dropdown {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #222;
+        top: 69px;
+        right: 15px;
+        width: 25vh;
+        z-index: 100;
+    }
+
+    .dropdown ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .dropdown ul li {
+        margin: 15px 1px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .slider-wrapper {
+        margin: 0 130px 55px;
+    }
+}

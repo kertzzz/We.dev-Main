@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeDev</title>
+    <link rel="icon" href="Assets/img/icon.png">
+    <link rel="stylesheet" href="Assets/css/styles.css">
+    <link rel="stylesheet" href="Assets/css/stylesheet.css">
+    <link rel="stylesheet" href="Assets/css/animation.css">
+    <link rel="stylesheet" href="Assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/7b1ce9f98a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="Assets/img/logo.png" alt="Logo">
+        </div>
+        <nav class="navbar-links" id="navbar-links">
+            <ul>
+                <li><a href="#Home-page" style="--i:1;">Home</a></li>
+                <li><a href="#About-page" style="--i:2;">About</a></li>
+                <li><a href="#Service-page" style="--i:3;">Services</a></li>
+                <li><a href="#Contact-page" style="--i:4;">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="menu-btn" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="dropdown" id="dropdown-menu">
+            <ul>
+                <li><a href="#Home-page" class="tab-active">Home</a></li>
+                <li><a href="#About-page">About</a></li>
+                <li><a href="#Service-page">Services</a></li>
+                <li><a href="#Contact-page">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+
+        <!--Home page-->
+        <section class="Home-page" id="Home-page">
+            <div class="home-div">
+                <div class="Font-div">
+                    <h2>Welcome to We.Dev</h2>
+                </div>
+                <h3>This Website was built by first year students of<br> Bachelor of Science in Information Technology
+                    from<br> Quezon City University. 2024-2025</h3>
+                <div class="navbtn">
+                    <a class="ContactPage_button" href="#Contact-page">Contact</a>
+                    <a class="AboutPage_button" href="#About-page">About Us</a>
+                </div>
+                <div class="img-container">
+                    <img src="Assets/img/Img_bg.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--Reviews Details Page-->
+        <section class="Reviews-page" id="Reviews-page">
+            <div class="Reviews-div">
+                <div class="left-rdiv">
+                    <h3>WHY US?</h3>
+                    <div class="fd">
+                        <img src="Assets/img/icon1.png" alt="" class="circle-icon">
+                        <h2>TAILORED SOLUTIONS</h2>
+                        <p>We understand that every business is unique.<br>
+                            Our experts craft custom automation systems<br>
+                            designed specifically for your needs.</p>
+                    </div>
+                    <div class="fd">
+                        <img src="Assets/img/icon3.png" alt="" class="circle-icon">
+                        <h2>PROVEN RESULTS</h2>
+                        <p>Companies we've worked with have reported<br> significant improvements,
+                            including faster<br> workflows and cost savings</p>
+                    </div>
+                    <div class="fd">
+                        <img src="Assets/img/icon2.png" alt="" class="circle-icon">
+                        <h2>RELIABLE SUPPORT</h2>
+                        <p>Our dedicated project team is always on hand<br> to ensure your systems run smoothly,
+                            proving<br> on going support and updates</p>
+                    </div>
+                </div>
+                <div class="right-rdiv">
+                    <h3>REVIEWS</h3>
+                    <div class="container-swiper">
+                        <div class="slide_wrapper">
+                            <div class="card-list swiper-wrapper">
+                                <div class="card_item swiper-slide">
+                
+                                </div>
+            
+                                <div class="card_item swiper-slide">
+                                    
+                                </div>
+            
+                                <div class="card_item swiper-slide">
+                                    
+                                </div>
+            
+                                <div class="card_item swiper-slide">
+                                    
+                                </div>
+            
+                            </div>
+                            <div class="slide-button swiper-button-prev"></div>
+                            <div class="slide-button swiper-button-next"></div>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <!--About Page-->
+        <section class="About-page" id="About-page">
+            <div class="About-div">
+                <h2>Meet Our Team</h2>
+                <div class="Profile-Team">
+                    <a href="CEO.html">
+                        <div class="CEO-container">
+                            <img class="icon1" src="Assets/img/neurology.png" alt="">
+                            <p>CEO & Project<br> Managers</p>
+                        </div>
+                    </a>
+                    <a href="Programmers.html">
+                        <div class="Programmers-container">
+                            <img class="icon2" src="Assets/img/code_off.png" alt="">
+                            <p>Programmers</p>
+                        </div>
+                    </a>
+                    <a href="Designers.html">
+                        <div class="Designers-container">
+                            <img class="icon3" src="Assets/img/border_color.png" alt="">
+                            <p>Designers</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--Service Page-->
+        <section class="Service-page" id="Service-page">
+            <div class="Service-div">
+                <h2>Our Services</h2>
+                <div class="language-container">
+                    <div class="Java-container">
+                        <img class="icon1" src="Assets/img/Java.png" alt="">
+                        <h5>Java Development</h5>
+                        <a href="JavaDevelopment.html" class="See_more">See more Details</a>
+                    </div>
+
+                    <div class="WebDev-container">
+                        <img class="icon2" src="Assets/img/Website.png" alt="">
+                        <h5>Website Development</h5>
+                        <a href="WebDevelopment.html" class="See_more">See more Details</a>
+                    </div>
+
+                    <div class="AndroidApp-container">
+                        <img class="icon3" src="Assets/img/Mobile.png" alt="">
+                        <h5>Mobile Application<br> Development</h5>
+                        <a href="MobileAppDevelopment.html" class="See_more">See more Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Page -->
+        <section class="Contact-page" id="Contact-page">
+            <div class="Contact-div">
+                <div class="contact-container">
+                    <div class="left-container">
+                        <div class="text-details">
+                            <p><b>Address:</b> Quezon City University - Batasan, Batasan Rd, Quezon City, Metro Manila.
+                            </p>
+                            <p><b>Contact Number:</b> +63 | 9365919492</p>
+                            <p><b>Facebook Page:</b> We.Dev Services</p>
+                            <p><b>Email:</b> We.DevServices@wedev.edu.ph</p>
+                        </div>
+                    </div>
+                    <div class="right-container">
+                        <form action="https://api.web3forms.com/submit" method="POST" id="Form-box"
+                            onsubmit="handleSubmit(event)">
+                            <h3>Contact Us</h3>
+                            <input type="hidden" name="access_key" value="ea3e7132-bba4-4a99-8bd9-8ea3bbce3355">
+                            <div class="input-box">
+                                <input type="text" name="name" id="text-name" required>
+                                <span>Full Name</span>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" name="email" id="text-email" required>
+                                <span>Email Address</span>
+                            </div>
+                            <div class="input-box">
+                                <textarea id="text-area" name="message" required></textarea>
+                                <span>Type your Message...</span>
+                            </div>
+                            <div class="input-box">
+                                <input type="submit" id="submitBTN" value="Send">
+                            </div>
+                        </form>
+
+                        <!-- Confirmation Message -->
+                        <div id="confirmation-message" class="Confirm-message">
+                            <p>Your message has been sent successfully! Thank you for contacting us.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>©Copyright 2024 BAIT-1A. All right reserved.</p>
+        </footer>
+</body>
+
+</html>
