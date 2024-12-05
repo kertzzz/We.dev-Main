@@ -7,9 +7,6 @@ menuBTN.addEventListener("click", () => {
     navmenu.classList.toggle("active");
 });
 
-
-
-
 /*const navbarLinks = document.getElementById('navbar-links');
 const dropdownMenu = document.getElementById('dropdown-menu');
 

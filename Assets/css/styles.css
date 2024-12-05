@@ -6,8 +6,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Arial';
-    text-decoration: none;
-    list-style: none;
 }
 
 body {
@@ -29,6 +27,13 @@ header {
     padding: 1rem 3.5rem;
     z-index: 1000;
     overflow: hidden;
+    
+}
+
+.navbar ul,
+a {
+    text-decoration: none;
+    list-style: none;
 }
 
 .navbar .logo img {
@@ -43,6 +48,7 @@ header {
 .navbar-links ul {
     display: flex;
     gap: 15px;
+    
 }
 
 .navbar-links a {
@@ -147,7 +153,7 @@ header {
 }
 
 .img-container {
-    width: 73%;
+    width: 71%;
     height: 100vh;
     position: absolute;
     top: -30vh;
@@ -157,6 +163,83 @@ header {
 .img-container img {
     width: 100%;
     height: 100vh;
+}
+
+.credits {
+    color: #000;
+}
+
+.footerContainer-homepage {
+    display: none;  
+    background-color: #C9BC31;
+    height: 23vh;
+    color: #fff;
+    font-size: 22px;
+    padding: 3vh;
+}
+
+.footerContainer-homepage i {
+    font-size: 30px;
+    color: #000;
+    position: absolute;
+}
+
+.footerContainer-homepage .address {
+    position: relative;
+    bottom: 1vh;
+    left: 5vh;
+    height: 5vh;
+    width: 26%;
+}
+
+.footerContainer-homepage .address p {
+    position: relative;
+    left: 5vh;
+}
+
+.footerContainer-homepage .num {
+    position: relative;
+    top: 8vh;
+    right: 45vh;
+    height: 5vh;
+    width: 13%;
+}
+
+.footerContainer-homepage .num p {
+    position: relative;
+    left: 5vh;
+}
+
+.footerContainer-homepage .email {
+    position: relative;
+    top: -1vh;
+    height: 5vh;
+    width: 13%;
+}
+
+.footerContainer-homepage .email p {
+    position: relative;
+    left: 5vh;
+}
+
+.footerContainer-homepage .page {
+    position: relative;
+    top: 8vh;
+    right: 25vh;
+    height: 5vh;
+    width: 13%;
+}
+
+.footerContainer-homepage .page p {
+    position: relative;
+    left: 5vh;
+}
+
+.footerContainer-homepage .cdt {
+    position: relative;
+    top: 4.5vh;
+    right: -15vh;
+    height: 5vh;
 }
 
 /*Reviews Details Page*/
@@ -250,13 +333,13 @@ header {
 .slide_wrapper {
     overflow: hidden;
     max-width: 100%;
-    height: 50vh;
-    margin: 0 130px 55px;
+    height: 45vh;
+    margin: 0 200px 55px;
 }
 
 .card-list .card_item {
     color: #000;
-    background-color: #776f6f4b;
+    background-color: #ffffff;
     user-select: none;
     padding: 35px;
     display: flex;
@@ -275,6 +358,12 @@ header {
 
 .slide_wrapper .slide-button:hover {
     color: #fff;
+}
+
+.img-rating {
+    object-fit: cover;
+    width: 48vh;
+    height: auto;
 }
 
 /*About Page*/

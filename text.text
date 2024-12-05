@@ -384,3 +384,29 @@ document.getElementById("More_Java").onclick = function () {
 document.getElementById("More_MobileApp").onclick = function () {
     location.href = "MobileAppDevelopment.html";
 };
+
+
+
+
+
+        <div class="top-container"></div>
+        <h1>Java Development</h1>
+        <div class="cont1">
+            <img src="Assets/img/Mikel.jpg" alt="">
+            <span>Project Manager</span>
+        </div>
+        <div class="cont2">
+            <img src="Assets/img/gaufo.jpg" alt="">
+            <span>Programmer</span>
+        </div>
+        <div class="cont3">
+            <img src="Assets/img/faith.jpg" alt="">
+            <span>Designer</span>
+        </div>
+        <h6>Team</h6>
+    </div>
+
+    <p>Our Java Development service provide robust, scalable, and secure solutions tailored to meet your business
+        needs.<br>
+        With years of experience and a team of skilled Java developers, we offer end-to-end services, including:
+    </p>

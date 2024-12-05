@@ -349,6 +349,14 @@
         left: 54vh;
     }
 
+    .credits {
+        display: none;
+    }
+
+    .footerContainer-homepage {
+        display: flex;
+    }
+    
     /*Reviews page*/
     .Reviews-page {
         height: 160vh;
