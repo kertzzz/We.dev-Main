@@ -111,6 +111,7 @@ function handleSubmit(event) {
                 alert('Error: ' + error.message);
         });
 }
+
 function showConfirmationMessage() {
     document.getElementById("confirmation-message").style.display = "block";
 

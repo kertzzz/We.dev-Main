@@ -410,3 +410,249 @@ document.getElementById("More_MobileApp").onclick = function () {
         needs.<br>
         With years of experience and a team of skilled Java developers, we offer end-to-end services, including:
     </p>
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Arial';
+}
+
+body {
+    background-size: 2000%;
+    position: sticky;
+    background-color: #e1e0e0;
+    color: #fff;
+    min-height: 100vh;
+    max-height: 500vh;
+}
+
+.main {
+    min-height: 240vh;
+}
+
+.mainContainer {
+    background-color: #3f3d3d;    
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 240vh;
+    top: 6vh;
+}
+
+.topContainer {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+}
+
+.topContainer h1 {
+    padding-top: 3vh;
+    left: 75vh;
+    font-size: 46px;
+    text-align: center;
+    flex-wrap: nowrap;
+    position: absolute;
+}
+
+.topContainer img {
+    width: 450px;
+    height: 450px;
+    position: relative;
+    left: 10vh;
+    border-radius: 50%;
+    justify-content: space-between;
+    padding: 120px;
+    object-fit: cover;
+}
+
+.topContainer span {
+    font-size: 20px;
+    position: relative;
+    left: -20vh;
+    top: -8vh;
+    color: #C9BC31;
+}
+
+.cont1 span {
+    left: -22vh;
+}
+
+.cont3 span {
+    left: -18vh;
+}
+
+.topContainer h6 {
+    font-size: 30px;
+    position: relative;
+    top: 43vh;
+    right: 86vh;
+}
+
+.detailsContainer {
+    width: 100%;
+    height: 190vh;
+    position: absolute;
+    top: 48vh;
+    padding-top: 2vh;
+}
+
+.detailsContainer p {
+    padding-top: 5vh;
+    font-size: 28px;
+    text-indent: 5vh;
+    position: relative;
+    left: 20vh;
+    width: 87%;
+}
+
+.detailsContainer ol {
+    padding-left: 20vh;
+    padding-top: 5vh;
+    font-size: 38px;
+    line-height: 10vh;
+}
+
+.detailsContainer ul {
+    font-size: 25px;
+    padding-left: 2vh;
+    line-height: 5vh;
+}
+
+.bottomContainer ul{
+    padding-left: 15vh;
+    padding-top: 3vh;
+    font-size: 28px;
+    line-height: 10vh;
+}
+
+.bottomContainer li {
+    line-height: 5vh;
+    position: relative;
+    left: -3vh;
+    top: -5vh;
+}
+
+.bottomContainer h2 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.bottomContainer a {
+    color: #C9BC31;
+}
+
+.footerContainer {
+    display: flex;  
+    background-color: #C9BC31;
+    height: 23vh;
+    color: #fff;
+    font-size: 22px;
+    padding: 3vh;
+}
+
+.footerContainer i {
+    font-size: 30px;
+    color: #000;
+}
+
+.footerContainer .address {
+    position: relative;
+    bottom: 1vh;
+    left: 5vh;
+    top: 5vh;
+    height: 5vh;
+    width: 26%;
+}
+
+.footerContainer .address p {
+    position: relative;
+    left: 5vh;
+}
+
+.footerContainer .num {
+    position: relative;
+    top: 15vh;
+    right: 45vh;
+    height: 5vh;
+    width: 13%;
+}
+
+.footerContainer .num p {
+    position: relative;
+    left: 5vh;
+}
+
+.footerContainer .email {
+    position: relative;
+    top: 5vh;
+    height: 5vh;
+    width: 13%;
+}
+
+.footerContainer .email p {
+    position: relative;
+    left: 5vh;
+}
+
+.footerContainer .page {
+    position: relative;
+    top: 15vh;
+    right: 25vh;
+    height: 5vh;
+    width: 13%;
+}
+
+.footerContainer .page p {
+    position: relative;
+    left: 5vh;
+}
+
+.footerContainer .cdt {
+    position: relative;
+    top: 10vh;
+    right: -15vh;
+    height: 5vh;
+}
+
+.ft-homepage {
+    display: none;
+}
+
+
+
+.WebDev-container .See_more {
+    position: relative;
+    top: 25vh;
+}
+
+.WebDev-container h5 {
+    position: relative;
+    top: 15vh;
+}
+
+.Java-container .See_more {
+    position: relative;
+    top: 24vh;
+}
+
+.Java-container h5 {
+    position: relative;
+    top: 14vh;
+}
+
+.AndroidApp-container .See_more {
+    position: relative;
+    top: 14vh;
+}
+
+.AndroidApp-container h5 {
+    position: relative;
+    top: 5vh;
+}

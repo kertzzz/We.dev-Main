@@ -1,122 +1,63 @@
+
+
+
+
 /*Faith*/
-#profile-faith {
-    top: 13vh;
-    left: 63vh;
-    width: 75vh;
-    height: 80vh;
-}
-
-#profile-faith img {
-    height: 35vh;
-    width: 30vh;
+.details-faith img {
+    height: 230px;
+    width: 200px;
+    padding: 20px;
     object-fit: cover;
-    position: relative;
-    left: 1vh;
-    top: -7vh;
-}
-
-#profile-faith .profile-name {
-    top: -25vh;
-    right: 9vh;
-}
-
-#profile-faith .profile-motto {
-    top: -15vh;
-    left: 36vh;
+    float: left;
 }
 
 /*Kert*/
-#profile-kert {
-    top: 13vh;
-    left: 63vh;
-    width: 75vh;
-    height: 80vh;
-}
-
-#profile-kert img {
-    height: 35vh;
-    width: 30vh;
+.details-kert img {
+    height: 230px;
+    width: 200px;
+    padding: 20px;
     object-fit: cover;
-    position: relative;
-    left: 1px;
-    top: -7vh;
-}
-
-#profile-kert .profile-name {
-    top: -25vh;
-    right: 13vh;
-}
-
-#profile-kert .profile-motto {
-    top: -15vh;
-    left: 35vh;
+    float: left;
 }
 
 /*nashley*/
-#profile-nashley {
-    top: 13vh;
-    left: 63vh;
-    width: 75vh;
-    height: 80vh;
-}
-
-#profile-nashley img {
-    height: 35vh;
-    width: 30vh;
+.details-nashley img {
+    height: 230px;
+    width: 200px;
+    padding: 20px;
     object-fit: cover;
-    position: relative;
-    left: 1px;
-    top: -7vh;
-}
-
-#profile-nashley .profile-name {
-    top: -25vh;
-    right: 13vh;
-}
-
-#profile-nashley .profile-motto {
-    top: -15vh;
-    left: 35vh;
-    font-size: 21px;
+    float: left;
 }
 
 /*Kerby*/
-#profile-kerby {
-    top: 13vh;
-    left: 60vh;
-    width: 75vh;
-    height: 80vh;
-}
-
-#profile-kerby img {
-    height: 35vh;
-    width: 30vh;
+.profile-kerby img {
+    height: 230px;
+    width: 200px;
+    padding: 20px;
     object-fit: cover;
-    position: relative;
-    left: 1vh;
-    top: -7vh;
+    float: left;
 }
 
-#profile-kerby .profile-name {
+.profile-kerby .profile-name {
     top: -25vh;
     right: 8vh;
     text-align: center;
 }
 
-#profile-kerby .profile-motto {
+.profile-kerby .profile-motto {
     top: -15vh;
     left: 35vh;
 }
 
 /*Mikel*/
-#profile-mikel {
+.profile-mikel {
     top: 13vh;
     left: 63vh;
     width: 75vh;
     height: 80vh;
 }
 
-#profile-mikel img {
+.profile-mikel img {
     height: 35vh;
     width: 30vh;
     object-fit: cover;
@@ -125,29 +66,29 @@
     top: -7vh;
 }
 
-#profile-mikel .profile-img {
+.profile-mikel .profile-img {
     padding-bottom: 30px;
 }
 
-#profile-mikel .profile-name {
+.profile-mikel .profile-name {
     top: -25vh;
     right: 4vh;
 }
 
-#profile-mikel .profile-motto {
+.profile-mikel .profile-motto {
     top: -15vh;
     left: 36vh;
 }
 
 /*Ellah*/
-#profile-ellah {
+.profile-ellah {
     top: 13vh;
     left: 60vh;
     width: 75vh;
     height: 80vh;
 }
 
-#profile-ellah img {
+.profile-ellah img {
     height: 35vh;
     width: 30vh;
     object-fit: cover;
@@ -156,29 +97,29 @@
     top: -7vh;
 }
 
-#profile-ellah .profile-img {
+.profile-ellah .profile-img {
     padding-bottom: 30px;
 }
 
-#profile-ellah .profile-name {
+.profile-ellah .profile-name {
     top: -25vh;
     right: 8vh;
 }
 
-#profile-ellah .profile-motto {
+.profile-ellah .profile-motto {
     top: -15vh;
     left: 40vh;
 }
 
 /*Danielle*/
-#profile-bacani {
+.profile-bacani {
     top: 13vh;
     left: 60vh;
     width: 75vh;
     height: 80vh;
 }
 
-#profile-bacani img {
+.profile-bacani img {
     height: 35vh;
     width: 30vh;
     object-fit: cover;
@@ -187,30 +128,30 @@
     top: -7vh;
 }
 
-#profile-bacani .profile-img {
+.profile-bacani .profile-img {
     padding-bottom: 30px;
 }
 
-#profile-bacani .profile-name {
+.profile-bacani .profile-name {
     top: -25vh;
     right: 8vh;
     text-align: center;
 }
 
-#profile-bacani .profile-motto {
+.profile-bacani .profile-motto {
     top: -15vh;
     left: 35vh;
 }
 
 /*precious*/
-#profile-precious {
+.profile-precious {
     top: 13vh;
     left: 60vh;
     width: 75vh;
     height: 80vh;
 }
 
-#profile-precious img {
+.profile-precious img {
     height: 35vh;
     width: 30vh;
     object-fit: cover;
@@ -219,26 +160,26 @@
     top: -7vh;
 }
 
-#profile-precious .profile-name {
+.profile-precious .profile-name {
     top: -25vh;
     right: 2vh;
 }
 
 
-#profile-precious .profile-motto {
+.profile-precious .profile-motto {
     top: -15vh;
     left: 36vh;
 }
 
 /*Gadiel*/
-#profile-gadiel {
+.profile-gadiel {
     top: 13vh;
     left: 60vh;
     width: 75vh;
     height: 80vh;
 }
 
-#profile-gadiel img {
+.profile-gadiel img {
     height: 35vh;
     width: 30vh;
     object-fit: cover;
@@ -247,25 +188,25 @@
     top: -7vh;
 }
 
-#profile-gadiel .profile-name {
+.profile-gadiel .profile-name {
     top: -25vh;
     right: 10vh;
 }
 
-#profile-gadiel .profile-motto {
+.profile-gadiel .profile-motto {
     top: -15vh;
     left: 38vh;
 }
 
 /*Marilyn*/
-#profile-mendez {
+.profile-mendez {
     top: 13vh;
     left: 60vh;
     width: 75vh;
     height: 80vh;
 }
 
-#profile-mendez img {
+.profile-mendez img {
     height: 35vh;
     width: 30vh;
     object-fit: cover;
@@ -274,25 +215,25 @@
     top: -7vh;
 }
 
-#profile-mendez .profile-name {
+.profile-mendez .profile-name {
     top: -25vh;
     right: 8vh;
 }
 
-#profile-mendez .profile-motto {
+.profile-mendez .profile-motto {
     top: -15vh;
     left: 35vh;
 }
 
 /*Corcelles*/
-#profile-corcelles {
+.profile-corcelles {
     top: 13vh;
     left: 63vh;
     width: 75vh;
     height: 80vh;
 }
 
-#profile-corcelles img {
+.profile-corcelles img {
     height: 35vh;
     width: 30vh;
     object-fit: cover;
@@ -301,29 +242,29 @@
     top: -7vh;
 }
 
-#profile-corcelles .profile-img {
+.profile-corcelles .profile-img {
     padding-bottom: 30px;
 }
 
-#profile-corcelles .profile-name {
+.profile-corcelles .profile-name {
     top: -25vh;
     right: 8vh;
 }
 
-#profile-corcelles .profile-motto {
+.profile-corcelles .profile-motto {
     top: -15vh;
     left: 36vh;
 }
 
 /*Euro*/
-#profile-gaufo {
+.profile-gaufo {
     top: 13vh;
     left: 63vh;
     width: 75vh;
     height: 80vh;
 }
 
-#profile-gaufo img {
+.profile-gaufo img {
     height: 35vh;
     width: 30vh;
     object-fit: cover;
@@ -332,25 +273,25 @@
     top: -7vh;
 }
 
-#profile-gaufo .profile-name {
+.profile-gaufo .profile-name {
     top: -25vh;
     right: 13vh;
 }
 
-#profile-gaufo .profile-motto {
+.profile-gaufo .profile-motto {
     top: -15vh;
     left: 35vh;
 }
 
 /*Diez*/
-#profile-diez {
+.profile-diez {
     top: 13vh;
     left: 60vh;
     width: 75vh;
     height: 80vh;
 }
 
-#profile-diez img {
+.profile-diez img {
     height: 35vh;
     width: 30vh;
     object-fit: cover;
@@ -359,12 +300,12 @@
     top: -7vh;
 }
 
-#profile-diez .profile-name {
+.profile-diez .profile-name {
     top: -25vh;
     right: 11vh;
 }
 
-#profile-diez .profile-motto {
+.profile-diez .profile-motto {
     top: -15vh;
     left: 35vh;
 }

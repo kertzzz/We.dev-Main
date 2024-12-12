@@ -1,17 +1,29 @@
-/*My Main Desktop Screen-size*/
-@media (max-width: 1920px) {}
-
-/*Laptop Screen-size*/
-@media (max-width: 1423px) {
-    .home-div h2 {
-        font-size: 45px;
-        width: 44%;
-        position: relative;
-        right: 5vh;
+/*My Main Desktop Screen-size
+@media screen and (max-width: 1250px) {
+    body {
+        justify-content: center;
     }
 
-    .home-div h3 {
-        font-size: 23px;
+}*/
+
+/*Laptop Screen-size*/
+@media screen and (max-width: 1250px) {
+    body {
+        justify-content: center;
+    }
+
+    .home-container {
+        height: 30%;
+    }
+    /*Home page*/
+    .home-leftcontainer h2 {
+        font-size: 35px;
+        text-align: left;
+    }
+
+    .home-leftcontainer h3 {
+        font-size: 22px;
+        text-indent: 30px;
         position: relative;
         right: 10vh;
     }
@@ -21,9 +33,12 @@
         left: -5vh;
     }
 
+    /*reviews page*/
     .left-rdiv .circle-icon {
         height: auto;
-        width: 29vh;
+        width: 27vh;
+        position: relative;
+        top: -4vh;
     }
 
     .left-rdiv h3 {
@@ -36,6 +51,7 @@
 
     .fd h2 {
         position: relative;
+        width: 40%;
         top: -23vh;
         left: 30vh;
     }
@@ -46,6 +62,7 @@
         right: 10vh;
     }
 
+    /*About page*/
     .container-swiper {
         position: relative;
         top: 25vh;
@@ -56,8 +73,150 @@
         width: 71.5%;
     }
 
-    .container {
-        top: 0vh;
+    .slider-wrapper {
+        margin: 0 170px 55px;
+        height: 100%;
+    }
+
+    .card-list .card-item .more-details {
+        margin-top: 1vh;
+    }
+
+    .floatbox {
+        position: absolute;
+        left: 100vh;
+    }
+
+    .floatbox .profile-img {
+        top: 8vh;
+        left: 20px;
+    }
+
+    .floatbox .profile-name {
+        left: -18vh;
+        font-size: 34px;
+    }
+
+    .floatbox .profile-motto {
+        font-size: 20px;
+        right: 18vh;
+    }
+
+    .floatbox ul {
+        font-size: 20px;
+        right: 20vh;
+    }
+
+    #profile-kert,
+    #profile-mikel,
+    #profile-bacani,
+    #profile-faith,
+    #profile-nashley,
+    #profile-gadiel,
+    #profile-gaufo,
+    #profile-corcelles,
+    #profile-precious,
+    #profile-mendez,
+    #profile-kerby,
+    #profile-ellah,
+    #profile-diez {
+        left: 63vh;
+        top: 12vh;
+        height: 85vh;
+        width: 90vh;
+    } 
+
+    #profile-kert .profile-name {
+        left: -10vh;
+    }
+
+    #profile-faith .profile-name {
+        left: -7vh;
+    }
+
+    #profile-mikel .profile-name {
+        left: -3vh;
+    }
+
+    #profile-bacani .profile-name {
+        left: -10vh;
+        top: -30vh;
+    }
+
+    #profile-nashley .profile-name {
+        left: -10vh;
+    }
+
+    #profile-gadiel .profile-name {
+        left: -9vh;
+    }
+
+    #profile-corcelles .profile-name {
+        left: -9vh;
+        top: -28vh;
+    }   
+
+    #profile-precious .profile-name {
+        left: -3vh;
+        font-size: 30px;
+    }
+
+    #profile-precious .profile-motto {
+        left: 40vh;
+        font-size: 18px;
+    }
+
+    #profile-mendez .profile-name {
+        left: -9vh;
+    }
+
+    #profile-mendez .profile-motto {
+        font-size: 18px;
+        left: 38vh;
+    }
+
+    #profile-ellah .profile-name {
+        left: -9vh;
+    }
+
+    #profile-ellah ul {
+        left: 6vh;
+        font-size: 19px;
+    }
+
+    #profile-ellah .ed-at {
+        left: 4vh;
+    }
+
+    #profile-ellah .Skills {
+        left: 4vh;
+    }
+
+    #profile-diez .profile-name {
+        left: -14vh;
+    }
+
+    #profile-diez ul {
+        left: 6vh;
+        font-size: 19px;
+    }
+
+    #profile-diez .ed-at {
+        left: 4vh;
+    }
+
+    #profile-diez .Skills {
+        left: 4vh;
+    }
+
+    #profile-kerby .profile-name {
+        left: -7vh;
+    }
+
+    .close-btn {
+        width: 40px;
+        height: auto;
+        font-size: 30px;
     }
 
     .Profile-Team img {
@@ -91,6 +250,7 @@
     .WebDev-container .See_more {
         position: relative;
         top: 20vh;
+        left: 13vh;
     }
 
     .WebDev-container h5 {
@@ -101,6 +261,7 @@
     .Java-container .See_more {
         position: relative;
         top: 19vh;
+        left: 12vh;
     }
 
     .Java-container h5 {
@@ -111,59 +272,12 @@
     .AndroidApp-container .See_more {
         position: relative;
         top: 6vh;
+        left: 12vh;
     }
 
     .AndroidApp-container h5 {
         position: relative;
         top: 4vh;
-    }
-
-    .container {
-        top: 15vh;
-    }
-
-    .card-list .card-item {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .slider-wrapper .slide-button {
-        margin: -50px 70px 35px;
-    }
-
-    .slider-wrapper {
-        height: auto;
-    }
-
-    .floatbox {
-        position: absolute;
-        left: 100vh;
-    }
-
-    .floatbox .profile-img {
-        top: 8vh;
-        left: 20px;
-    }
-
-    .floatbox .profile-name {
-        left: -18vh;
-        font-size: 34px;
-    }
-
-    .floatbox .profile-motto {
-        font-size: 20px;
-        right: 18vh;
-    }
-
-    .floatbox ul {
-        font-size: 20px;
-        right: 20vh;
-    }
-
-    .close-btn {
-        width: 40px;
-        height: auto;
-        font-size: 30px;
     }
 
     .Portfolio-page h2 {
@@ -201,122 +315,12 @@
     }
 }
 
-/*Tablet Screen-Size*/
-@media (max-width: 990px) {
-    .home-div h2 {
-        font-size: 30px;
-        position: relative;
-        left: -8vh;
-    }
-
-    .home-div h3 {
-        font-size: 18px;
-        position: relative;
-        left: -8vh;
-    }
-
-    .navbar-links.active,
-    .navbar-links {
-        display: none;
-    }
-
-    .dropdown {
-        display: flex;
-        position: sticky;
-        flex-direction: column;
-        position: absolute;
-        background-color: #222;
-        top: 69px;
-        right: 15px;
-        width: 25vh;
-        z-index: 1;
-    }
-
-    .dropdown ul {
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-    }
-
-    .dropdown ul li {
-        margin: 15px 1px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .dropdown.active {
-        display: flex;
-    }
-
-    .menu-btn {
-        display: flex;
-    }
-
-    .slider-wrapper .slide-button {
-        margin-top: -50px;
-    }
-
-    .card-list .card-item .name {
-        font-size: 24px;
-    }
-
-    .card-list .card-item .role {
-        font-size: 20px;
-    }
-
-    .floatbox {
-        left: 18vh;
-    }
-
-    .floatbox .profile-name {
-        right: 25vh;
-        font-size: 38px;
-    }
-
-    .floatbox .profile-role {
-        font-size: 30px;
-        right: -8vh;
-    }
-
-    .floatbox .profile-motto {
-        font-size: 20px;
-        right: -35vh;
-    }
-
-    .floatbox ul {
-        font-size: 20px;
-        right: 29vh;
-    }
-
-    .close-btn {
-        width: 40px;
-        height: auto;
-        font-size: 30px;
-    }
-
-
-}
-
-
 /*Mobile Screen-size*/
-@media (max-width: 768px) {
-
+@media screen and (max-width: 620px) {
     /*Home Page*/
+    
     .img-container {
         display: none;
-    }
-
-    .home-div h2 {
-        font-size: 25px;
-        position: relative;
-        left: -8vh;
-        width: 46%;
-    }
-
-    .home-div h3 {
-        font-size: 16.5px;
-        position: relative;
-        left: -8vh;
     }
 
     .navbar-links.active,
@@ -335,18 +339,18 @@
         gap: 0;
         flex-direction: column;
         background-color: #181920;
-        width: 32%;
+        width: 38%;
         text-align: center;
         transition: .3s;
     }
 
     .nav-item {
         margin: 16px 0;
-        padding-left: 6vh;
+        padding-left: 10vh;
     }
 
     .nav-menu.active {
-        left: 54vh;
+        left: 60vh;
     }
 
     .credits {
@@ -358,15 +362,11 @@
     }
     
     /*Reviews page*/
-    .Reviews-page {
-        height: 160vh;
-    }
 
     .Reviews-div {
         display: flex;
         flex-direction: column;
         gap: 1vh;
-        background-color: #c9c9c9;
     }
 
     .left-rdiv {
@@ -374,39 +374,47 @@
     }
 
     .left-rdiv .circle-icon {
-        padding-left: 5vh;
-        padding-bottom: 3vh;
         height: auto;
-        width: 20vh;
+        width: 130px;
+    }
+
+    .fd-text {
+        
     }
 
     .fd h2 {
-        top: -18vh;
-        left: 23vh;
+ 
     }
 
     .fd p {
-        top: -15vh;
-        right: 5vh;
+
     }
 
     .right-rdiv {
+        height: 190vh;
         width: 100%;
     }
 
-    .container-swiper {
-        top: 2vh;
+    .reviewContainer {
+        width: auto;
+        height: 160vh;
+    }
+
+    .reviewContainer .imgContainer {
+        width: auto;
     }
 
     /*About page*/
     .About-page {
         padding-top: 65px;
+        top: 40vh;
         height: 187vh;
     }
 
     .About-page h2 {
         position: relative;
         top: -10vh;
+        font-size: 3rem;
     }
 
     .Profile-Team {
@@ -415,23 +423,26 @@
         justify-content: center;
         gap: 4vh;
         width: 100%;
-        height: 50vh;
-        padding-left: 14vh;
+        height: 150vh;
+        position: relative;
+        left: 10vh;
     }
 
     .Profile-Team .CEO-container,
     .Programmers-container,
     .Designers-container {
         position: relative;
-        top: 45vh;
+        top: -5vh;
         height: 50vh;
         padding-top: 25vh;
     }
 
-    .Profile-Team .icon1 {
+    .Profile-Team .icon1,
+    .icon2,
+    .icon3 {
         width: 100px;
         height: auto;
-        left: 19.5vh;
+        left: 17vh;
         top: -25vh;
         position: relative;
     }
@@ -439,7 +450,7 @@
     .Profile-Team .icon2 {
         width: 100px;
         height: auto;
-        left: 19.5vh;
+        left: 17vh;
         top: -25vh;
         position: relative;
     }
@@ -447,7 +458,7 @@
     .Profile-Team .icon3 {
         width: 100px;
         height: auto;
-        left: 19.5vh;
+        left: 17vh;
         top: -25vh;
         position: relative;
     }
@@ -559,12 +570,15 @@
     /*Services page*/
     .Service-page {
         padding-top: 65px;
-        height: 187vh;
+        position: relative;
+        top: 50vh;
+        height: 230vh;
     }
 
     .Service-page h2 {
         position: relative;
         top: -10vh;
+        font-size: 3rem;
     }
 
     .language-container {
@@ -573,15 +587,17 @@
         justify-content: center;
         gap: 4vh;
         width: 100%;
-        height: 40vh;
-        padding-left: 14vh;
-    }
+        height: 150vh;
+        position: relative;
+        left: 10vh;
+}
 
     .language-container .WebDev-container,
     .Java-container,
     .AndroidApp-container {
         position: relative;
-        top: 55vh;
+        top: 15vh;
+        left: 13vh;
         height: 80vh;
         padding-top: 25vh;
     }
@@ -589,7 +605,7 @@
     .language-container .icon1 {
         width: 100px;
         height: auto;
-        left: 19.5vh;
+        left: 17vh;
         top: -20vh;
         position: relative;
     }
@@ -597,7 +613,7 @@
     .language-container .icon2 {
         width: 100px;
         height: auto;
-        left: 19.5vh;
+        left: 17vh;
         top: -20vh;
         position: relative;
     }
@@ -605,7 +621,7 @@
     .language-container .icon3 {
         width: 100px;
         height: auto;
-        left: 19.5vh;
+        left: 17vh;
         top: -20vh;
         position: relative;
     }
@@ -625,26 +641,105 @@
     }
 
     /*Contact Page*/
+    .Contact-page {
+        height: 100vh;
+        position: relative;
+        top: 30vh;
+    }
+
+    .Contact-div {
+        position: relative;
+        top: 2vh;
+    }
+
     .left-container,
     .text-details {
         display: none;
     }
 
     .contact-container {
-        margin-top: 10vh;
+        margin-top: 15vh;
+        margin-bottom: 10vh;
     }
 
     .contact-container,
     .right-container {
         width: 70vh;
-        height: 70vh;
+        height: 89vh;
+        border-radius: 10px;
     }
 
-    .footer-details {
-        display: grid;
-        background-color: #181920;
-        width: auto;
-        color: #fff;
-        padding: 10px;
+    .footerContainer {
+        position: relative;
+        top: 40vh;
+        height: 30vh;
+        display: flex;
+        font-size: 14px;
     }
+
+    .footerContainer i {
+        position: relative;
+        top: 4.5vh;
+    }
+
+    .footerContainer .email p {
+        position: relative;
+        left: 7vh;
+    }
+
+    .footerContainer .page p {
+        position: relative;
+        left: 7vh;
+    }
+
+    .footerContainer .num p {
+        position: relative;
+        left: 7vh;
+    }
+
+    .footerContainer .address p {
+        position: relative;
+        left: 7vh;
+    }
+
+    .footerContainer .address {
+        position: relative;
+        left: 1vh;
+        top: -2vh;
+        height: 5vh;
+        width: 100%;
+    }
+
+    .footerContainer .num {
+        position: relative;
+        right: 33vh;
+        top: 15vh;
+        height: 5vh;
+        width: 100%;
+    }
+
+    .footerContainer .email {
+        position: relative;
+        top: -2vh;
+        height: 5vh;
+        right: 23vh;
+        width: 10%;
+    }
+
+    .footerContainer .page {
+        position: relative;
+        top: 15vh;
+        right: 34vh;
+        height: 5vh;
+        width: 100%;
+    }
+
+    .footerContainer .cdt {
+        position: absolute;
+        top: 14vh;
+        left: 86vh;
+        height: 5vh;
+        width: 28%;
+    }
+    
 }

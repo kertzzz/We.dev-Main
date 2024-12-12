@@ -9,9 +9,12 @@
 }
 
 body {
+    background-size: 2000%;
     background-color: #e1e0e0;
     color: #fff;
+    position: sticky;
     min-height: 100vh;
+    max-height: 500vh;
 }
 
 /*Navbar styles*/
@@ -37,18 +40,15 @@ a {
 }
 
 .navbar .logo img {
-    color: #fff;
     width: 90px;
     height: auto;
     margin-left: 30px;
     animation: slideRight 1s ease forwards;
 }
 
-
 .navbar-links ul {
     display: flex;
     gap: 15px;
-    
 }
 
 .navbar-links a {
@@ -82,25 +82,43 @@ a {
 
 /*Home Page*/
 .Home-page {
+    display: grid;
     min-height: 100vh;
     height: 100%;
     width: 100%;
-    position: relative;
-    align-items: center;
     gap: 2rem;
 }
 
-.home-div {
-    position: relative;
-    top: 35vh;
-    left: 15vh;
-    width: 70%;
+.home-container {
+    display: flex;
+    margin: auto;
+    width: 100%;    
+    height: 100%;
 }
 
-.Font-div h2 {
-    width: 47%;
-    font-size: 65px;
-    padding-bottom: 10px;
+.home-leftcontainer {
+    width: 50%;
+    display: grid;
+}
+
+.home-rightcontainer {
+    width: 50%;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.welcome-text {
+    margin: auto;
+    height: 5vh;
+}
+
+.welcome-text h2 {
+    width: 100%;
+    font-size: 34px;
+    padding-bottom: 1px;
+    margin: 25px 0 ;
     color: #030728;
     overflow: hidden;
     white-space: nowrap;
@@ -108,11 +126,11 @@ a {
     animation: typing 2.8s steps(22) forwards, blink 1s step-end infinite, slideLeft .8s ease forwards;
 }
 
-.home-div h3 {
+.home-leftcontainer h3 {
     padding-left: 20px;
-    font-size: 27px;
+    font-size: 18px;
     line-height: 35px;
-    text-indent: 55px;
+    text-indent: 45px;
     color: rgb(84, 82, 82);
     animation: slideTop 1s ease forwards;
     animation-delay: .2s;
@@ -121,10 +139,6 @@ a {
 .navbtn a {
     font-size: 20px;
     font-weight: 500;
-    position: relative;
-    top: 5vh;
-    left: 5vh;
-    margin-right: 5vh;
     color: #fff;
     animation: slideTop 5s ease forwards;
 }
@@ -133,7 +147,6 @@ a {
     background: rgb(84, 82, 82);
     padding: 15px 60px 15px 60px;
     border-radius: 20px;
-    
 }
 
 .ContactPage_button:hover {
@@ -152,18 +165,7 @@ a {
     transition: .2s ease-in-out;
 }
 
-.img-container {
-    width: 71%;
-    height: 100vh;
-    position: absolute;
-    top: -30vh;
-    left: 84.5vh;
-}
 
-.img-container img {
-    width: 100%;
-    height: 100vh;
-}
 
 .credits {
     color: #000;
@@ -254,11 +256,8 @@ a {
 }
 
 .Reviews-div {
-    position: relative;
-    top: 0;
-    left: 0;
     display: flex;
-    height: 100vh;
+    height: 100%;
 }
 
 .left-rdiv {
@@ -268,35 +267,39 @@ a {
 }
 
 .left-rdiv h3 {
-    font-size: 54px;
+    font-size: 50px;
     display: flex;
     justify-content: center;
     font-weight: 550;
     padding-top: 5vh;
-    padding-bottom: 8vh;
+    padding-bottom: 20px;
     color: #C9BC31;
 }
 
 .left-rdiv .circle-icon {
-    padding-left: 5vh;
+    float: left;
+    margin: 20px;
     height: auto;
-    width: 25vh;
+    width: 19vh;
+    position: relative;
+    bottom: 30px;
 }
 
 .left-rdiv .fd {
-    font-size: 20px;
+    font-size: 16px;
+    display: flex;
 }
 
 .fd h2 {
-    position: relative;
-    top: -23vh;
-    left: 30vh;
+    padding: 10px;
+    width: 100%;
+    height: 40px;
 }
 
-.fd p {
-    position: relative;
-    top: -19vh;
-    right: 20vh;
+.fd-text p {
+    padding: 8px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .left-rdiv .fd h4 {
@@ -309,6 +312,7 @@ a {
     text-indent: 3vh;
     float: right;
 }
+
 .right-rdiv {
     background-color: #c9c9c9;
     height: 100vh;
@@ -325,44 +329,20 @@ a {
     color: #000;
 }
 
-.container-swiper {
-    position: relative;
-    top: 15vh;
+.reviewContainer {
+    width: auto;
+    height: 80vh;
 }
 
-.slide_wrapper {
-    overflow: hidden;
-    max-width: 100%;
-    height: 45vh;
-    margin: 0 200px 55px;
+.reviewContainer .imgContainer {
+    background-color: #a3a3a3;
+    width: 106vh;
+    height: 15vh;
+    margin-bottom: 1vh;
 }
 
-.card-list .card_item {
-    color: #000;
-    background-color: #ffffff;
-    user-select: none;
-    padding: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #000;
-    border-radius: 8px;
-}
-
-.slide_wrapper .slide-button {
-    color: #333333;
-    margin: -30px 70px 35px;
-    transition: .2s ease;
-}
-
-.slide_wrapper .slide-button:hover {
-    color: #fff;
-}
-
-.img-rating {
+.imgContainer img {
     object-fit: cover;
-    width: 48vh;
     height: auto;
 }
 
@@ -371,19 +351,24 @@ a {
     min-height: 100vh;
     height: 100%;
     width: 100%;
-    position: relative;
     align-items: center;
     justify-content: center;
     gap: 2rem;
     background-color: #e1e0e0;
 }
-.About-page h2 {
+
+.About-div {
+    height: 100%;
+    width: 100%;
+}
+
+.About-div h2 {
     display: flex;
     justify-content: center;
-    font-size: 65px;
+    font-size: 60px;
     font-weight: 500;
     padding-top: 13vh;
-    padding-bottom: 80px;
+    padding-bottom: 30px;
     color: #050505;
     font-family: "Montserrat", sans-serif;
 }
@@ -391,79 +376,63 @@ a {
 .Profile-Team {
     display: flex;
     width: 100%;
-    height: 65vh;
-    justify-content: center;
-    padding-left: 95px;
-    padding-right: 40px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.Profile-Team .CEO-container,
+.CEO-container,
 .Programmers-container,
 .Designers-container {
     background-color: #c9bc318c;
-    margin-top: 1px;
-    margin-right: 70px;
-    width: 50vh;
-    height: 60vh;
-    position: relative;
+    width: 300px;
+    height: 380px;
+    display: grid;
     box-shadow: 0 8px px rgba(0, 0, 0, .2);
     border-radius: 20px;
 }
 
-.Profile-Team img {
-    width: 150px;
+.CEO-container img,
+.Programmers-container img,
+.Designers-container img {
+    margin: auto;
+    width: 130px;
     height: auto;
     color: #b4adad;
-    padding-top: 10vh;
-    left: 17vh;
-    position: relative;
-}
-
-.Profile-Team .icon1,
-.icon2 {
-    position: relative;
-    top: 5vh;
+    padding: 10px;
 }
 
 .Profile-Team p {
     font-size: 28px;
     font-weight: 500;
     display: flex;
+    text-align: center;
     justify-content: center;
     color: #000000;
-    text-align: center;
-}
-
-.Designers-container p {
-    position: relative;
-    top: 17vh;
-}
-
-.CEO-container p {
-    position: relative;
-    top: 18vh;
-}
-
-.Programmers-container p {
-    position: relative;
-    top: 20vh;
+    
 }
 
 /*Service Page*/
 .Service-page {
-    min-height: 103vh;
+    background-color: #c9c9c9;
+    min-height: 100vh;
     height: 100%;
     width: 100%;
-    position: relative;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
-    background-color: #c9c9c9;
+}
+
+.Service-div {
+    height: 100%;
+    width: 100%;
 }
 
 .Service-page h2 {
     display: flex;
-    font-size: 65px;
+    font-size: 60px;
     padding-top: 13vh;
+    padding-bottom: 50px;
     font-weight: 600;
     color: #000000;
     justify-content: center;
@@ -472,44 +441,34 @@ a {
 .language-container {
     display: flex;
     width: 100%;
-    height: 65vh;
-    justify-content: center;
-    padding-left: 95px;
-    padding-right: 40px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.language-container .WebDev-container,
+.WebDev-container,
 .Java-container,
 .AndroidApp-container {
     background-color: #3E3B39;
-    margin-top: 5vh;
-    margin-right: 70px;
-    width: 50vh;
-    height: 60vh;
-    position: relative;
+    width: 300px;
+    height: 350px;
+    display: grid;
     box-shadow: 0 8px px rgba(0, 0, 0, .2);
     border-radius: 20px;
 }
 
-.language-container img {
-    width: 150px;
-    height: auto;
+.Java-container img,
+.WebDev-container img,
+.AndroidApp-container img {
     color: #b4adad;
-    padding-top: 5vh;
-    left: 17vh;
-    position: relative;
+    width: 130px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
 }
 
 .language-container a {
     text-align: center;
-    position: relative;
-    left: 16.5vh;
-}
-
-.language-container .icon1,
-.icon2 {
-    position: relative;
-    top: 5vh;
 }
 
 .language-container h5 {
@@ -523,43 +482,14 @@ a {
 
 .language-container .See_more {
     display: flex;
+    text-align: center;
+    justify-content: center;
     position: relative;
     font-size: 22px;
     font-weight: 500;
     cursor: pointer;
     transition: .2s ease;
     color: #C9BC31;
-    text-align: center;
-}
-
-.WebDev-container .See_more {
-    position: relative;
-    top: 25vh;
-}
-
-.WebDev-container h5 {
-    position: relative;
-    top: 15vh;
-}
-
-.Java-container .See_more {
-    position: relative;
-    top: 24vh;
-}
-
-.Java-container h5 {
-    position: relative;
-    top: 14vh;
-}
-
-.AndroidApp-container .See_more {
-    position: relative;
-    top: 14vh;
-}
-
-.AndroidApp-container h5 {
-    position: relative;
-    top: 5vh;
 }
 
 .language-container .See_more:hover {
@@ -568,21 +498,24 @@ a {
 
 /*Contact Page*/
 .Contact-page {
+    display: grid;
     min-height: 100vh;
     height: 100%;
     width: 100%;
-    position: relative;
-    align-items: center;
+    justify-content: center;
     gap: 2rem;
 }
 
+.Contact-div {
+    height: 100%;
+    width: 100%;
+}
+
 .contact-container {
-    width: 140vh;
-    height: 85vh;
-    margin: auto;
-    position: relative;
-    top: 11vh;
+    margin-top: 80px;
     display: flex;
+    width: 140vh;
+    height: 360px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
     animation: swingTop .8s linear forwards;
 }
@@ -591,14 +524,15 @@ a {
     background-color: #999898;
     width: 45%;
     height: 85vh;
-    z-index: 10;
+    display: flex;
 }
 
 .text-details {
+    margin: auto;
     font-family: monospace;
-    padding-top: 10vh;
-    margin: 80px 0px;
-    padding: 30px;
+    font-size: 18px;
+    padding: 5px;
+    width: 100%;
 }
 
 .text-details b {
@@ -607,8 +541,7 @@ a {
 
 .text-details p {
     color: #fff;
-    font-size: 21px;
-    padding: 50px;
+    padding: 20px;
 }
 
 
@@ -620,24 +553,23 @@ a {
 }
 
 .right-container h3 {
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
-    padding: 50px;
-    margin-top: 3vh;
+    padding: 10px;
     color: #C9BC31;
 }
 
 .right-container .input-box {
     position: relative;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 40px;
     color: #fff;
 }
 
 .right-container .input-box input,
 .right-container .input-box textarea {
     padding: 5px 0;
-    font-size: 24px;
+    font-size: 20px;
     width: 80%;
     margin: 10px 0 0 50px;
     border: none;
@@ -693,10 +625,7 @@ a {
     padding-top: 10px;
 }
 
-footer {
-    color: #000;
-}
-
-.footer-details {
-    display: none;
+.credits {
+    color: #000;   
+    padding-top: 5px;
 }

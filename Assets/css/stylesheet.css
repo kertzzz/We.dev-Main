@@ -7,105 +7,95 @@
 }
 
 body {
+    background-size: 2000%;
+    position: sticky;
     background-color: #e1e0e0;
     color: #fff;
     min-height: 100vh;
+    max-height: 500vh;
 }
 
 .main {
-    min-height: 240vh;
+    min-height: 320vh;
 }
 
 .mainContainer {
-    background-color: #3f3d3d;    
+    background-color: hsl(0, 2%, 24%);    
     display: flex;
-    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0px;
     width: 100%;
-    height: 240vh;
-    top: 6vh;
+    height: 320vh;
 }
 
 .topContainer {
-    height: 50vh;
+    background-color: #948b25;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    height: 330px;
     width: 100%;
-    display: flex;
+    justify-content: center;
 }
 
 .topContainer h1 {
     padding-top: 3vh;
-    left: 75vh;
     font-size: 46px;
     text-align: center;
-    flex-wrap: nowrap;
-    position: absolute;
 }
 
-.topContainer img {
-    width: 450px;
-    height: 450px;
-    position: relative;
-    left: 10vh;
+.container-box {
+    display: flex;
+    justify-content: center;
+}
+
+.container-box img {
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    justify-content: space-between;
-    padding: 120px;
+    padding: 20px;
     object-fit: cover;
+    margin-right: 20px;
 }
 
-.topContainer span {
+.container-box h6 {
     font-size: 20px;
-    position: relative;
-    left: -20vh;
-    top: -8vh;
     color: #C9BC31;
-}
-
-.cont1 span {
-    left: -22vh;
-}
-
-.cont3 span {
-    left: -18vh;
-}
-
-.topContainer h6 {
-    font-size: 30px;
-    position: relative;
-    top: 43vh;
-    right: 86vh;
-}
-
-.detailsContainer {
-    width: 100%;
-    height: 190vh;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 48vh;
-    padding-top: 2vh;
 }
+
+.topContainer h5 {
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
 
 .detailsContainer p {
-    padding-top: 5vh;
-    font-size: 28px;
+    padding: 30px;
+    font-size: 24px;
     text-indent: 5vh;
-    position: relative;
-    left: 20vh;
-    width: 87%;
+    width: 100%;
 }
 
 .detailsContainer ol {
-    padding-left: 20vh;
-    padding-top: 5vh;
-    font-size: 38px;
+    padding-left: 100px;
+    padding-top: 10px;
+    font-size: 28px;
     line-height: 10vh;
 }
 
 .detailsContainer ul {
-    font-size: 25px;
+    font-size: 22px;
     padding-left: 2vh;
-    line-height: 5vh;
+    line-height: 50px;
 }
 
 .bottomContainer ul{
-    padding-left: 15vh;
+    padding-left: 100px;
     padding-top: 3vh;
     font-size: 28px;
     line-height: 10vh;
@@ -113,13 +103,10 @@ body {
 
 .bottomContainer li {
     line-height: 5vh;
-    position: relative;
-    left: -3vh;
-    top: -5vh;
 }
 
 .bottomContainer h2 {
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
 }
 
@@ -139,67 +126,54 @@ body {
 .footerContainer i {
     font-size: 30px;
     color: #000;
-    position: absolute;
 }
 
 .footerContainer .address {
-    position: relative;
-    bottom: 1vh;
-    left: 5vh;
-    top: 5vh;
     height: 5vh;
     width: 26%;
 }
 
 .footerContainer .address p {
-    position: relative;
-    
-    left: 5vh;
+
 }
 
 .footerContainer .num {
-    position: relative;
-    top: 15vh;
-    right: 45vh;
+
     height: 5vh;
     width: 13%;
 }
 
 .footerContainer .num p {
-    position: relative;
-    left: 5vh;
+
 }
 
 .footerContainer .email {
-    position: relative;
-    top: 5vh;
+
     height: 5vh;
     width: 13%;
 }
 
 .footerContainer .email p {
-    position: relative;
-    left: 5vh;
+
 }
 
 .footerContainer .page {
-    position: relative;
-    top: 15vh;
-    right: 25vh;
+
     height: 5vh;
     width: 13%;
 }
 
 .footerContainer .page p {
-    position: relative;
-    left: 5vh;
+
 }
 
 .footerContainer .cdt {
-    position: relative;
-    top: 10vh;
-    right: -15vh;
+
     height: 5vh;
+}
+
+.ft-homepage {
+    display: none;
 }
 
 
@@ -211,7 +185,14 @@ body {
 
 
 /*About Us*/
-.title h1 {
+.main-container {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container h1 {
     color: #000;
     justify-content: center;
     text-align: center;
@@ -222,21 +203,21 @@ body {
 
 .container {
     position: relative;
-    top: 25vh;
+    top: 20vh;
 }
 
 .slider-wrapper {
     overflow: hidden;
     max-width: 100%;
-    height: 50vh;
-    margin: 0 120px 55px;
+    height: 60vh;
+    margin: 0 130px 55px;
 }
 
 .card-list .card-item {
     color: #000;
     background-color: #776f6f4b;
     user-select: none;
-    padding: 35px;
+    padding: 35px;  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -255,13 +236,13 @@ body {
 }
 
 .card-list .card-item .name {
-    font-size: 30px;
+    font-size: 24px;
     color: #000000;
     line-height: 5px;
 }
 
 .card-list .card-item .profile-role {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 500;
     position: relative;
     float: right;
@@ -272,7 +253,7 @@ body {
 
 .card-list .card-item .more-details {
     font-size: 22px;
-    margin-top: 10vh;
+    margin-top: 4vh;
     padding: 30px 35px;
     color: #000000;
     font-weight: 500;
@@ -303,7 +284,11 @@ body {
 .floatbox {
     display: none;
     position: absolute;
-    z-index: 100;
+    top: 13vh;
+    left: 63vh;
+    z-index: 1000;
+    width: 500px;
+    height: 500px;
     background: #020202a8;
     backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -312,54 +297,57 @@ body {
 }
 
 .floatbox img {
-    padding: 10px;
     border-radius: 50%;
-    height: 50vh;
-    width: 40vh;
+    height: 230px;
+    width: 200px;
+    padding: 20px;
     object-fit: cover;
-}
-
-.profile-img {
-    width: 33%;
-    position: relative;
-    top: 10vh;
-    left: 35px;
-    object-fit: cover;
+    float: left;
 }
 
 .floatbox.active {
     display: block;
 }
 
-.floatbox .profile-name {
-    font-size: 34px;
-    position: relative;
-    float: right;
+.detailsp {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    width: 55%; 
+}
+
+.detailsp .profile-name {
+    font-size: 30px;
     color: #C9BC31;
 }
 
-.floatbox .profile-motto {
-    font-size: 23px;
-    position: relative;
+.detailsp .profile-motto {
+    font-size: 20px;
+    padding-top: 20px;
+    text-align: justify;
 }
 
-.floatbox .ed-at,
+.personal-details {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+}
+
+.personal-details .ed-at,
 .Skills {
     font-size: 20px;
-    position: relative;
-    top: -1vh;
-    left: 8vh;
+    padding-left: 20px;
 }
 
-.floatbox .colorf {
+.personal-details .colorf {
     color: #C9BC31;
 }
 
-.floatbox ul {
+.personal-details ul {
     font-size: 18px;
-    position: relative;
-    top: -1vh;
-    left: 10vh;
+    padding-left: 40px;
     line-height: 5vh;
     list-style: none;
 }
@@ -380,3 +368,27 @@ body {
     color: #fff;
     background-color: #3f414149;
 }
+
+#profile-faith li {
+    font-size: 14px;
+}
+
+#profile-mikel li {
+    font-size: 14px;
+}
+
+#profile-gaufo li {
+    font-size: 14px;
+}
+
+#profile-ellah li {
+    font-size: 14px;
+}
+
+#profile-diez li {
+    font-size: 14px;
+}
+.name{
+    font-size: 14px;
+}
+
